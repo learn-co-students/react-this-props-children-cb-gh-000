@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 export default class MovieBrowser extends React.Component {
   render() {
@@ -16,3 +17,8 @@ export default class MovieBrowser extends React.Component {
     );
   }
 }
+
+ReactDOM.render(
+  <MovieBrowser />,
+  document.getElementById('global')
+);
